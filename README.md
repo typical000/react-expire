@@ -2,11 +2,11 @@
 
 React component for managing time expiration.
 
-### Why
+## Why
 
 Sometimes, we need to show something, and after, remove this thing. The simpliest case - notification that must disappear after some time.
 
-### Installation
+## Installation
 
 ```
 # with NPM
@@ -15,7 +15,7 @@ npm install react-expire --save
 yarn install react-expire
 ```
 
-### How to use
+## How to use
 
 `react-expire` component accepts such props:
 - **until** Lifetime in milliseconds. If set 0 - this means that widget will never expire. When widget will expire - `onExpire` property will be triggered.
@@ -26,14 +26,14 @@ yarn install react-expire
 You can use this component in different ways:
 1. As component with(out) children that passes expire event in parent component via callback
     ```
-    <Expire util={2000} id={1} onExpire={someParentComponentHandler}>
+    <Expire until={2000} id={1} onExpire={someParentComponentHandler}>
       <ChildComponent />
     </Expire>
     ```
 
 2. As render-prop
     ```
-    <Expire util={2000}>
+    <Expire until={2000}>
       {(expired) => (
         expired ? 'Expired' : 'Not yet expired'
       )}
@@ -43,13 +43,13 @@ You can use this component in different ways:
 *NOTE:* You can use together render-prop pattern and callback function.
 
 
-### How to build
+## How to build
 
 ```
 npm run build
 ```
 
-### How to run examples
+## How to run examples
 
 ```
 npm run example
