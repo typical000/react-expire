@@ -1,0 +1,19 @@
+.button {
+  background: var(--theme);
+  transition: all linear 300ms;
+  box-shadow: var(--shadow);
+  font-family: var(--font);
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  text-decoration: none;
+  color: #fff;
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,27 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {},
+  "rules": {
+    "max-line-length": false,
+    "curly": false,
+    "ordered-imports": true,
+    "member-access": [true, "no-public"],
+    "interface-name": [true, "never-prefix"],
+    "interface-over-type-literal": true,
+    "jsdoc-format": true,
+    "no-implicit-dependencies": [true, "dev"]
+  },
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "dist/**",
+      "node_modules/**",
+      ".cache/**"
+    ]
+  }
+}

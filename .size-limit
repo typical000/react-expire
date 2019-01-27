@@ -1,0 +1,7 @@
+[
+  {
+    "path": "dist/Expire.js",
+    "webpack": false,
+    "limit": "3.4 KB"
+  }
+]

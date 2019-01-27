@@ -1,0 +1,7 @@
+scripts
+test
+dist/index.*
+dist/main.*
+.cache
+.gitignore
+CHANGELOG.md
