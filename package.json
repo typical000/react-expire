@@ -1,7 +1,7 @@
 {
   "name": "react-expire",
   "description": "React component for managing time expiration",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/Expire.js",
   "typings": "dist/Expire.d.ts",
   "scripts": {

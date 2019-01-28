@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-interface ExpireProps {
+export interface ExpireProps {
   /**
    * Used as identifier of what was expired. Usefull if you have parent component
    * that renders "list" of "expirable" components, and you need to identify them in some way.
@@ -22,7 +22,7 @@ interface ExpireProps {
   onExpire?(id?: number | string): void;
 }
 
-interface ExpireState {
+export interface ExpireState {
   expired: boolean;
 }
 
