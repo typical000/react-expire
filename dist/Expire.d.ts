@@ -20,13 +20,14 @@ interface ExpireProps {
      */
     onExpire?(id?: number | string): void;
 }
+interface ExpireState {
+    expired: boolean;
+}
 /**
  * @class Expire
  * @classdesc "React component for managing time expiration
  */
-export default class Expire extends React.Component<ExpireProps, {
-    expired: boolean;
-}> {
+export default class Expire extends React.Component<ExpireProps, ExpireState> {
     state: {
         expired: boolean;
     };
