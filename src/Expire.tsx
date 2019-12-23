@@ -85,13 +85,13 @@ export default class Expire extends React.Component<ExpireProps, ExpireState> {
     });
 
     this.expireTimer = window.setTimeout(() => {
-      if (onExpire) {
-        onExpire(id);
-      }
-
       this.setState({
         expired: true,
       });
+
+      if (onExpire) {
+        onExpire(id);
+      }
     }, until);
   }
 
